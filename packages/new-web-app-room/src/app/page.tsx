@@ -38,7 +38,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="relative h-[100dvh] w-full overflow-hidden bg-black text-white">
+    <div className="relative h-[100dvh] w-full overflow-hidden bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       {/* Enhanced animated aurora background layers */}
       <div className="absolute inset-0 bg-aurora-layer-1" />
       <div className="absolute inset-0 bg-aurora-layer-2" />
@@ -67,7 +67,7 @@ export default function Landing() {
       
       {/* Start Prompting arrow pointing left - bottom left */}
       <div className="absolute left-6 md:left-8 bottom-[5%] z-20 flex items-center gap-3 arrow-point-left">
-        <div className="flex items-center gap-2 text-white/80 font-medium text-sm md:text-base">
+        <div className="flex items-center gap-2 text-black/80 dark:text-white/80 font-medium text-sm md:text-base transition-colors duration-300">
           <svg 
             className="w-5 h-5 md:w-6 md:h-6 animate-bounce-horizontal" 
             fill="none" 
@@ -82,3 +82,5 @@ export default function Landing() {
     </div>
   );
 }
+
+
